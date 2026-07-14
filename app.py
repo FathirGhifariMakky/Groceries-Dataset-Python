@@ -13,6 +13,8 @@ Universitas Gunadarma
 # ==========================================================
 # IMPORT LIBRARY
 # ==========================================================
+import matplotlib
+matplotlib.use("Agg")
 
 import streamlit as st
 
