@@ -257,15 +257,11 @@ def run_apriori(
     start_time = time.perf_counter()
 
     frequent_itemsets = apriori(
-
-        basket,
-
-        min_support=min_support,
-
-        use_colnames=True,
-
-        max_len=max_len
-
+    basket,
+    min_support=min_support,
+    use_colnames=True,
+    max_len=max_len,
+    low_memory=True
     )
 
     execution_time = (
