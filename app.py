@@ -154,6 +154,15 @@ with st.sidebar:
 
     )
 
+        # tambahkan warning di sini
+    if min_support < 0.02 and max_len >= 4:
+
+        st.warning(
+            "Kombinasi Minimum Support kecil dan Maximum Itemset besar "
+            "dapat menyebabkan proses menjadi sangat berat. "
+            "Disarankan menaikkan Minimum Support atau menurunkan Maximum Itemset."
+        )
+
     st.markdown("---")
 
     analyze_button = st.button(
