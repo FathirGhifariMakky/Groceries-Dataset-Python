@@ -60,6 +60,20 @@ from visualization import (
 
 )
 
+import pandas as pd
+
+df = pd.read_csv("nama_file_dataset_anda.csv")
+
+# GANTI dengan nama kolom asli di dataset Anda
+# Cek dulu nama kolomnya dengan print(df.columns.tolist())
+MEMBER_COL = "Member_number"   # sesuaikan
+DATE_COL = "Date"              # sesuaikan
+ITEM_COL = "itemDescription"   # sesuaikan
+
+print("Jumlah baris:", len(df))
+print("Jumlah item unik:", df[ITEM_COL].nunique())
+print("Jumlah transaksi unik:", df.groupby([MEMBER_COL, DATE_COL]).ngroups)
+
 # ==========================================================
 # KONFIGURASI STREAMLIT
 # ==========================================================
