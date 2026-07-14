@@ -52,7 +52,7 @@ from visualization import (
 
     plot_support_confidence,
 
-    # plot_network,
+    plot_network,
 
     show_about
 
@@ -633,13 +633,13 @@ def visualization_page():
 
         )
 
-    # elif chart == "Network Graph":
+    elif chart == "Network Graph":
 
-    #     plot_network(
+        plot_network(
 
-    #         st.session_state.rules
+            st.session_state.rules
 
-    #     )
+        )
 # ==========================================================
 # RECOMMENDATION PAGE
 # ==========================================================
