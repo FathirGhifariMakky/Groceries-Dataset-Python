@@ -62,7 +62,7 @@ from visualization import (
 
 import pandas as pd
 
-df = pd.read_csv("nama_file_dataset_anda.csv")
+df = pd.read_csv("Groceries_dataset.csv")
 
 # GANTI dengan nama kolom asli di dataset Anda
 # Cek dulu nama kolomnya dengan print(df.columns.tolist())
