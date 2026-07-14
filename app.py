@@ -52,7 +52,7 @@ from visualization import (
 
     plot_network,
 
-    show_about,
+    show_about
 
     # show_footer
 
